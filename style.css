@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+  }
+  
+  .tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    box-shadow: 0 0 15px #000;
+  }
+  
+  .casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .branca {
+    background-color: #eee;
+  }
+  
+  .preta {
+    background-color: #444;
+  }
+  
+  .selecionada {
+    border: 2px solid #ff0;
+  }
+  
